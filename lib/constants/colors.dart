@@ -3,10 +3,10 @@ import 'dart:ui';
 import 'package:music_app/utils/hex_to_color.dart';
 
 class AppColors {
-  static Color orange = hexToColor("#FB5A00");
-  static Color blue = hexToColor("#4b90f7");
-  static Color purple = hexToColor("#674FF");
-  static Color pink = hexToColor("#DB17DF");
-  static Color grey = hexToColor("#2D2D2E");
+  static const Color orange = Color(0xFFFB5A00);
+  static const Color blue = Color(0xFF4b90f7);
+  static const Color purple = Color(0xFFDB17DF);
+  static const Color pink = Color(0xFFDB17DF);
+  static const Color grey = Color(0xFF2D2D2E);
   static const Color name = Color(0xFFccc7c5);
 }
