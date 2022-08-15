@@ -7,6 +7,18 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: const <Widget>[
+          // TODO: pUT lOGO here
+          Text(
+            "Listen.",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
