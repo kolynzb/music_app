@@ -7,5 +7,6 @@ class AppColors {
   static Color blue = hexToColor("#4b90f7");
   static Color purple = hexToColor("#674FF");
   static Color pink = hexToColor("#DB17DF");
+  static Color grey = hexToColor("#2D2D2E");
   static const Color name = Color(0xFFccc7c5);
 }
