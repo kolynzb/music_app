@@ -43,13 +43,16 @@ class WelcomeScreen extends StatelessWidget {
                 size: 30,
               ),
             ),
+            const SizedBox(
+              height: 60,
+            ),
             LargeBtn(text: "Login"),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             GradientBtn(text: "Create an account"),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             SmallText(text: "or connect via social media", color: Colors.white),
             Row(

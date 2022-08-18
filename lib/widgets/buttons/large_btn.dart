@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:music_app/constants/colors.dart';
 import 'package:music_app/widgets/text/small_text.dart';
 
@@ -12,7 +13,7 @@ class LargeBtn extends StatelessWidget {
     Key? key,
     this.bgColor = const Color(0xFFccc7c5),
     required this.text,
-    this.width = 100,
+    this.width = 300,
     this.height = 40,
   }) : super(key: key);
 
@@ -27,7 +28,9 @@ class LargeBtn extends StatelessWidget {
           Radius.circular(20),
         ),
       ),
-      child: SmallText(text: text),
+      child: Center(
+        child: SmallText(text: text, size: 18, color: Colors.white),
+      ),
     );
   }
 }

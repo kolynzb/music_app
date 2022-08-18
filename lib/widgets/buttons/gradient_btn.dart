@@ -14,7 +14,7 @@ class GradientBtn extends StatelessWidget {
     Key? key,
     this.bgColor = const Color(0xFFccc7c5),
     required this.text,
-    this.width = 100,
+    this.width = 300,
     this.height = 40,
   }) : super(key: key);
 
@@ -35,9 +35,12 @@ class GradientBtn extends StatelessWidget {
           Radius.circular(20),
         ),
       ),
-      child: SmallText(
-        text: text,
-        color: Colors.white,
+      child: Center(
+        child: SmallText(
+          text: text,
+          color: Colors.white,
+          size: 18,
+        ),
       ),
     );
   }
