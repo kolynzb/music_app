@@ -1,6 +1,7 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:music_app/constants/dimension.dart';
 
 class BigText extends StatelessWidget {
   Color? color;
@@ -10,23 +11,23 @@ class BigText extends StatelessWidget {
 
   BigText({
     Key? key,
-    this.color = const Color(0xFF332d2b),
+    this.color = const Color(0xffffffff),
     required this.text,
-    this.size = 0,
+    this.size = 20,
     // this.overflow = TextOverflow.ellipsis,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      text,
+      text.toUpperCase(),
       // overflow: overflow,
       maxLines: 1,
       style: GoogleFonts.nunito(
         textStyle: TextStyle(
           color: color,
-          fontWeight: FontWeight.w400,
-          fontSize: size == 0 ? Dimensions.font20 : size,
+          fontWeight: FontWeight.w700,
+          fontSize: size,
         ),
       ),
     );

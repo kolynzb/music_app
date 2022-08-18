@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:music_app/utils/hex_to_color.dart';
 
 class AppColors {
   static const Color orange = Color(0xFFFB5A00);
