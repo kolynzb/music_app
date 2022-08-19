@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:music_app/screens/auth/login_screen.dart';
+import 'package:music_app/screens/home_screen.dart';
 import 'package:music_app/screens/onboarding/welcome_screen.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const WelcomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

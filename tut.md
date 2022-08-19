@@ -7,3 +7,4 @@
 - [Glass Morhism Effect](https://youtu.be/MKj_7zyeeOQ)
 - [shared preferences](https://www.youtube.com/watch?v=sa_U0jffQII)
 - [From js to fluter watch](https://youtu.be/7sJZi0grFR4)
+- [glassmorph ui](https://pub.dev/packages/glassmorphism_ui)
