@@ -36,6 +36,7 @@ dependencies:
   google_fonts: ^3.0.1
   get: ^4.6.5
   glassmorphism: ^3.0.0
+  ionicons: ^0.2.1
 
 dev_dependencies:
   flutter_test:

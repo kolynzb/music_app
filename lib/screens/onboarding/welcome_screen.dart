@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 import 'package:music_app/constants/colors.dart';
 import 'package:music_app/widgets/buttons/gm_btn.dart';
@@ -50,12 +51,10 @@ class WelcomeScreen extends StatelessWidget {
               height: 60,
             ),
             GlassmorphicBtn(text: "Login"),
-            const SizedBox(
-              height: 18,
-            ),
+            const SizedBox(height: 16),
             GradientBtn(text: "Create An Account"),
             const SizedBox(
-              height: 18,
+              height: 20,
             ),
             SmallText(
               text: "or connect via social media",
@@ -63,15 +62,18 @@ class WelcomeScreen extends StatelessWidget {
               weight: FontWeight.w600,
             ),
             const SizedBox(
-              height: 18,
+              height: 10,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const <Widget>[
-                Icon(Icons.ac_unit, size: 30, color: Colors.white),
-                Icon(Icons.ac_unit, size: 30, color: Colors.white),
-                Icon(Icons.ac_unit, size: 30, color: Colors.white),
-              ],
+            SizedBox(
+              width: 110,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const <Widget>[
+                  Icon(Ionicons.logo_twitter, size: 25, color: Colors.white),
+                  Icon(Ionicons.logo_google, size: 25, color: Colors.white),
+                  Icon(Ionicons.logo_facebook, size: 25, color: Colors.white),
+                ],
+              ),
             ),
           ],
         ),
