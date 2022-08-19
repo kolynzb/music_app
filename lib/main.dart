@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_app/screens/welcome_screen.dart';
+import 'package:music_app/screens/onboarding/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());

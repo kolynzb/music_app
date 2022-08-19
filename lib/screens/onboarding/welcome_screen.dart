@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:music_app/constants/colors.dart';
+import 'package:music_app/widgets/buttons/gm_btn.dart';
 import 'package:music_app/widgets/buttons/gradient_btn.dart';
-import 'package:music_app/widgets/buttons/large_btn.dart';
 import 'package:music_app/widgets/text/big_text.dart';
 import 'package:music_app/widgets/text/small_text.dart';
 
@@ -25,6 +25,9 @@ class WelcomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            const SizedBox(
+              height: 100,
+            ),
             Container(
               height: 150,
               // width: 30,
@@ -46,20 +49,24 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            LargeBtn(text: "Login"),
+            GlassmorphicBtn(text: "Login"),
             const SizedBox(
-              height: 20,
+              height: 18,
             ),
             GradientBtn(text: "Create an account"),
             const SizedBox(
-              height: 20,
+              height: 18,
             ),
             SmallText(text: "or connect via social media", color: Colors.white),
+            const SizedBox(
+              height: 18,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: const <Widget>[
-                Icon(Icons.ac_unit, size: 24, color: Colors.white),
-                Icon(Icons.ac_unit, size: 24, color: Colors.white),
-                Icon(Icons.ac_unit, size: 24, color: Colors.white),
+                Icon(Icons.ac_unit, size: 30, color: Colors.white),
+                Icon(Icons.ac_unit, size: 30, color: Colors.white),
+                Icon(Icons.ac_unit, size: 30, color: Colors.white),
               ],
             ),
           ],
