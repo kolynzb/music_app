@@ -27,7 +27,7 @@ class WelcomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             const SizedBox(
-              height: 100,
+              height: 90,
             ),
             Container(
               height: 150,
