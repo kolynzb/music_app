@@ -44,7 +44,12 @@ class GlassmorphicBtn extends StatelessWidget {
       ),
       border: 1,
       child: Center(
-        child: SmallText(text: text, size: 18, color: Colors.white),
+        child: SmallText(
+          text: text,
+          size: 18,
+          color: Colors.white,
+          weight: FontWeight.w600,
+        ),
       ),
     );
   }

@@ -57,7 +57,11 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 18,
             ),
-            SmallText(text: "or connect via social media", color: Colors.white),
+            SmallText(
+              text: "or connect via social media",
+              color: Colors.white,
+              weight: FontWeight.w600,
+            ),
             const SizedBox(
               height: 18,
             ),

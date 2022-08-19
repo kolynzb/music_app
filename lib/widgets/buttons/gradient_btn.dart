@@ -40,6 +40,7 @@ class GradientBtn extends StatelessWidget {
           text: text,
           color: Colors.white,
           size: 18,
+          weight: FontWeight.w600,
         ),
       ),
     );
