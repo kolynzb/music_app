@@ -53,7 +53,7 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 18,
             ),
-            GradientBtn(text: "Create an account"),
+            GradientBtn(text: "Create An Account"),
             const SizedBox(
               height: 18,
             ),
