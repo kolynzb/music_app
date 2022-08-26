@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:music_app/constants/colors.dart';
 import 'package:music_app/widgets/buttons/gradient_btn.dart';
@@ -12,6 +14,8 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: double.maxFinite,
+        width: double.maxFinite,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topRight,
@@ -28,22 +32,23 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                const SizedBox(
-                  height: 90,
+                BigText(
+                  text: 'Login',
+                  size: 30,
                 ),
-                Flexible(
-                  child: BigText(
-                    text: 'Log into Account',
-                    size: 30,
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.02,
+                ),
+                Text(
+                  "Join Listen to hear the latest from people you follow",
+                  style: GoogleFonts.nunito(
+                    textStyle: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: 60,
-                ),
-                SmallText(
-                  text: "Join Listen to hear the latest from people you follow",
-                  color: Colors.white,
-                  weight: FontWeight.w600,
+                  textAlign: TextAlign.center,
                 ),
                 const SizedBox(
                   height: 60,
@@ -54,15 +59,34 @@ class LoginScreen extends StatelessWidget {
                     hintText: "Email",
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                TextFormField(
-                  keyboardType: TextInputType.visiblePassword,
-                  decoration: const InputDecoration(
-                    hintText: "Password",
+                const SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20.0, right: 20),
+                  child: CupertinoTextField(
+                    prefix: const Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Icon(Icons.person_outline_outlined),
+                    ),
+                    placeholder: "Password",
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(12)),
                   ),
                 ),
+                // Container(
+                //   margin: const EdgeInsets.only(left: 10, right: 10,top:20,bottom:20),
+                //   child: TextFormField(
+                //     keyboardType: TextInputType.visiblePassword,
+                //     decoration:  InputDecoration(
+                //       filled: true,
+                //       border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+                //       fillColor:  Colors.blue[100],
+                //       hintText: "Password",
+                //     ),
+                //   ),
+                // ),
+
                 const SizedBox(
                   height: 20,
                 ),

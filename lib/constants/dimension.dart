@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // scaling factor = 844 /x
-class Dimensions {
+class Sizes {
   static double screenHeight = Get.context!.height;
   static double screenWidth = Get.context!.width;
 
@@ -33,3 +34,18 @@ class Dimensions {
   static double icon16 = screenHeight / 52.27;
   static double icon24 = screenHeight / 35.17;
 }
+
+class Dimensions{
+  
+  getHeight(BuildContext context) {
+    var screenHeight = MediaQuery.of(context).size.height;
+    
+
+  }
+
+  getWidth(BuildContext context) {
+    var screenWidth = MediaQuery.of(context).size.width;
+  }
+}
+
+

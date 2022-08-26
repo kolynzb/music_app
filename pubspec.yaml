@@ -37,6 +37,7 @@ dependencies:
   get: ^4.6.5
   glassmorphism: ^3.0.0
   ionicons: ^0.2.1
+  just_audio: ^0.9.28
 
 dev_dependencies:
   flutter_test:
